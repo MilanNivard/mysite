@@ -1,0 +1,21 @@
+{% extends "header.html" %}	
+{% block content %}	
+{% include "includes/left_column_home.html" %}	
+				<div id="RightColumn">
+					<h1>Login</h1>
+					<div id="login">
+						<form method="post">
+							{% csrf_token %}
+							{{form.as_p}}
+							<button type="submit"> Login</button>
+
+						</form>
+						<br/>
+						<br/>
+						Don't have a login yet? <a href="../signup"> Sign up !</a>
+					</div>
+					
+
+				</div>
+{% endblock %}	
+

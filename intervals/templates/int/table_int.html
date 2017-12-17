@@ -1,0 +1,50 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".a0",'0')
+ans_but(".a1",'1')
+ans_but(".a2",'2')
+ans_but(".a3",'3')
+ans_but(".a4",'4')
+ans_but(".a5",'5')
+ans_but(".a6",'6')
+ans_but(".a7",'7')
+ans_but(".a8",'8')
+ans_but(".a9",'9')
+ans_but(".a10",'10')
+ans_but(".a11",'11')
+ans_but(".a12",'12')
+</script>
+<table id="table_intervals_t">
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ na_0 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_2 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_4 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_5 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_7 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_9 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_11 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_12 }}"></a></td>
+	</tr>
+</table>
+<table id="table_intervals_b">
+	<tr style="margin-left:-100px;">
+		<td class="td_interval"></td>
+		<td class="td_interval"><a href="#" class="{{ na_1 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_3 }}"></a></td>
+		<td class="td_interval"></td>
+		<td class="td_interval"><a href="#" class="{{ na_6 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_8 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ na_10 }}"></a></td>
+		<td class="td_interval"></td>
+	</tr>							
+</table>

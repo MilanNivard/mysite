@@ -1,0 +1,36 @@
+{% extends "header.html" %}	
+{% block content %}	
+				<div id="left_column">
+					{% include "pit/left_column_pit.html" %}	
+				</div>
+				<div id="RightColumn">
+				{% load static %}
+					<a href="#openHelp" id="help"> <img src="{% static 'images/help.png' %}"></a>	
+					<div id="openHelp" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close"><h1>X</h1></a>
+							<h2>Intervals</h2>
+							<p>You will hear two tones. Is the second tone you hear higer or lower
+							than the first one?</p>
+							<p>The difficulty increases after 10 correct answers in a row.</p>
+							<p>At sub-level 1, the difference between the two tones is 50 cents,
+							while at sub-level 5, the difference is only 5 cents.
+							</p>
+						</div>
+					</div>
+					
+					<a id="playbutton" href="#">
+						<div class="{{ start_button }}">
+						</div>
+					</a>
+
+					<div id="volumcontroller"></div>
+					
+					<div id="questions">
+						{% include "pit/lvl_pit.html" %}
+					</div>
+									
+					<!--<div id="piano"></div>-->
+				</div>
+
+{% endblock %}	

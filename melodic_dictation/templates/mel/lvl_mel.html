@@ -1,0 +1,39 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".p1",'I')
+ans_but(".p2",'ii')
+ans_but(".p3",'bIII')
+ans_but(".p4",'iii')
+ans_but(".p5",'IV')
+ans_but(".p6",'V')
+ans_but(".p7",'bVI')
+ans_but(".p8",'vi')
+ans_but(".p9",'bVII')
+
+ans_but(".p11",'i')
+ans_but(".p12",'bII')
+ans_but(".p13",'III')
+ans_but(".p14",'iv')
+ans_but(".p15",'IV')
+ans_but(".p16",'v')
+ans_but(".p17",'V')
+ans_but(".p18",'VI')
+ans_but(".p19",'VII')
+</script> 
+						<div id="prog_barrus">							
+							{% include "includes/prog_bar.html" %}
+						</div>
+
+						<div id="table_pro">
+							{% include "mel/table_mel.html" %}
+						</div>

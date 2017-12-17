@@ -1,0 +1,26 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".t1",'major')
+ans_but(".t2",'minor')
+ans_but(".t3",'dim')
+ans_but(".t4",'aug')
+ans_but(".t5",'sus2')
+ans_but(".t10",'sus4')
+</script> 
+						<div id="prog_barrus">							
+							{% include "includes/prog_bar.html" %}
+						</div>
+
+						<div id="table_tri">
+							{% include "tri/table_tri.html" %}
+						</div>

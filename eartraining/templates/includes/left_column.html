@@ -1,0 +1,79 @@
+<!--<script type='text/javascript'>
+function load_lvl(link_id, value, template){
+	$(document).ready(function(){
+		$(link_id).click(function(){
+			$.ajax({
+			data: {select_level: value},
+			type: 'GET',})
+			$("#questions").load(template);
+		});
+	});
+}
+load_lvl("#i_lvl1", 1, "lvl1")
+load_lvl("#i_lvl2", 2, "lvl2")
+load_lvl("#i_lvl3", 3, "lvl3")
+load_lvl("#i_lvl4", 4, "lvl4")
+load_lvl("#i_lvl5", 5, "lvl5")
+load_lvl("#i_lvl6", 6, "lvl6")
+
+</script>-->
+<a href="../profile/">
+<h1>{{ module_name }}</h1>
+<h2 class="left">Total</h2>
+<h2 class="right">{{tot_int_score}} %</h2>
+<canvas id="bar_intervals" class="progress_bar" width="220" height="20">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script type="text/javascript">
+	func_bar("bar_intervals",{{tot_int_score}})
+</script> 
+</a>
+<br/><br/>
+
+<a id="i_lvl1" class="bar_link_lvl" href="#">
+<h2 class="left">Level 1</h2>
+<h2 class="right"> {{ lvl_1_hi_score }} %</h2>
+<canvas id="i_lvl_1"  class="progress_bar_lvl" width="220" height="20">Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">func_bar_2("i_lvl_1",{{ lvl_1_hi_score }},0)</script>
+</a><p>fixed root, low-high</p>
+<br/><br/>
+	
+<a id="i_lvl2" class="bar_link_lvl" href="#">
+<h2 class="left">Level 2</h2>
+<h2 class="right">{{ lvl_2_hi_score }} %</h2>
+<canvas id="i_lvl_2"  class="progress_bar_lvl" width="220" height="20">Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">func_bar_2("i_lvl_2",{{ lvl_2_hi_score }},0)</script>
+</a><p>fixed root, high-low</p>
+<br/><br/>
+
+<a id="i_lvl3" class="bar_link_lvl" href="#">
+<h2 class="left">Level 3</h2>
+<h2 class="right">{{ lvl_3_hi_score }} %</h2>
+<canvas id="i_lvl_3"  class="progress_bar_lvl" width="220" height="20">Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">func_bar_2("i_lvl_3",{{ lvl_3_hi_score }},0)</script>
+</a><p>fixed root, harmony</p>
+<br/><br/>
+
+<a id="i_lvl4" class="bar_link_lvl" href="#">
+<h2 class="left">Level 4</h2>
+<h2 class="right">{{ lvl_4_hi_score }} %</h2>
+<canvas id="i_lvl_4"  class="progress_bar_lvl" width="220" height="20">Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">func_bar_2("i_lvl_4",{{ lvl_4_hi_score }},0)</script>
+</a><p>alternating root, low-high</p>
+<br/><br/>
+
+<a id="i_lvl5" class="bar_link_lvl" href="#">
+<h2 class="left">Level 5</h2>
+<h2 class="right">{{ lvl_5_hi_score }} %</h2>
+<canvas id="i_lvl_5"  class="progress_bar_lvl" width="220" height="20">Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">func_bar_2("i_lvl_5",{{ lvl_5_hi_score }},0)</script>
+</a><p>alternating root, high-low</p>
+<br/><br/>
+
+<a id="i_lvl6" class="bar_link_lvl" href="#">
+<h2 class="left">Level 6</h2>
+<h2 class="right">{{ lvl_6_hi_score }} %</h2>
+<canvas id="i_lvl_6"  class="progress_bar_lvl" width="220" height="20">Your browser does not support the HTML5 canvas tag.</canvas>
+<script type="text/javascript">func_bar_2("i_lvl_6",{{ lvl_6_hi_score }},0)</script>
+</a><p>alternating root, harmony</p>
+<br/>

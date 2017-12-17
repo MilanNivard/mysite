@@ -1,0 +1,18 @@
+<div id="{{ practice_modus }}">
+	<div id="lvllogo">
+		<div id="lvlnr">{{ sub_lvl }}</div>
+		<div id="totlvl">{{ sub_level_cap }}</div>
+	</div>
+	<h1>{{ lvl }}</h1>
+	Give 10 correct answers in a row
+</div>
+
+<div id="prog_bar">
+	<canvas class="lvl_bar" id="challenge_bar" width="612" height="30">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+
+	<script type="text/javascript">
+	chal_bar("challenge_bar",{{ prog_count }},{{ max_hi_score }},
+	'correct:' + {{ prog_count_int }} + '/10' , 'sub-level: ' + {{ sub_lvl }} )
+	</script>
+</div>

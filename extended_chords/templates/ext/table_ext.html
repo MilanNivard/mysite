@@ -1,0 +1,65 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".t15",'major 7th')
+ans_but(".t16",'dominant')
+ans_but(".t17",'minor 7th')
+ans_but(".t18",'b9')
+ans_but(".t19",'maj 9')
+ans_but(".t20",'9')
+ans_but(".t21",'min 9')
+ans_but(".t22",'#9')
+ans_but(".t23",'maj #11')
+ans_but(".t24",'#11')
+ans_but(".t25",'min 11')
+ans_but(".t26",'b9b13')
+ans_but(".t27",'maj9b13')
+ans_but(".t28",'b13')
+ans_but(".t29",'min 13')
+</script> 
+<table id="table_sev_chords">
+	<tr>
+		<td class="ext_interval"><a href="#" class="{{ t17 }}"></a></td>
+		<td class="ext_interval"><a href="#" class="{{ t16 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t15 }}"></a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td class="td_interval"><a href="#" class="{{ t18 }}"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ t21 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t20 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t19 }}"></a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td class="td_interval"><a href="#" class="{{ t22 }}"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ t25 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t24 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t23 }}"></a></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td class="td_interval"><a href="#" class="{{ t26 }}"></a></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ t29 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t28 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t27 }}"></a></td>
+	</tr>
+</table>

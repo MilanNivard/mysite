@@ -1,0 +1,63 @@
+{% extends "header.html" %}	
+{% block content %}	
+				<div id="left_column">
+					{% include "includes/left_column.html" %}	
+				</div>
+				<div id="RightColumn">
+				{% load static %}
+					<a href="#openHelp" id="help"> <img src="{% static 'images/help.png' %}"></a>	
+					<div id="openHelp" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close"><h1>X</h1></a>
+							<h2>Triads</h2>
+							<p>Stack intervals on top of eachother and you get chords!</p>
+							<table>
+								<tr>
+									<td>major</td>
+									<td>: 1, 3, 5</td>
+									<td> (a minor third on top of a major third)</td>
+								</tr>
+								<tr>
+									<td>minor</td>
+									<td>: 1, b3, 5</td>
+									<td> (a major third on top of a minor third)</td>
+								</tr>
+								<tr>
+									<td>diminished</td>
+									<td>: 1, b3, b5</td>
+									<td> (two minor thirds on top of eachother)</td>
+								</tr>
+								<tr>
+									<td>augmented</td>
+									<td>: 1, 3, b6</td>
+									<td> (two major thirds on top of eachother)</td>
+								</tr>
+								<tr>
+									<td>suspended 2</td>
+									<td>: 1, 2, 5</td>
+									<td> (a perfect fourth on top of a major second)</td>
+								</tr>
+								<tr>
+									<td>suspended 4</td>
+									<td>: 1, 4, 5</td>
+									<td> (a major second on top of a perfect fourth)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<a id="playbutton" href="#">
+						<div class="{{ start_button }}">
+						</div>
+					</a>
+
+					<div id="volumcontroller"></div>
+					
+					<div id="questions">
+						{% include "tri/lvl_tri.html" %}
+					</div>
+									
+					<!--<div id="piano"></div>-->
+				</div>
+
+{% endblock %}	

@@ -1,0 +1,105 @@
+{% block content %}	
+				<div id="left_column_home">
+					<h1>Melody</h1>
+					<h2 class="left">Pitch</h2>
+					<h2 class="right">{{tot_pit_score}} %</h2>
+					<a href="/pitch" class="bar_link">
+					<canvas id="bar_pitch" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+					
+					<script type="text/javascript">
+						func_bar("bar_pitch",{{tot_pit_score}})
+					</script> 
+					</a>
+					
+					<h2 class="left">Intervals</h2>
+					<h2 class="right">{{tot_int_score}} %</h2>
+					<a  href="../intervals" class="bar_link">
+					<canvas id="bar_intervals" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_intervals",{{tot_int_score}})
+					</script> 
+					</a>
+					
+					<h2 class="left">Melodic Dictation</h2>
+					<h2 class="right">{{tot_mel_score}} %</h2>
+					<a href="/melodic_dictation" class="bar_link">
+					<canvas id="bar_melodic_dictation" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_melodic_dictation",{{tot_mel_score}})
+					</script> 
+					</a>
+					
+					<h1>Harmony</h1>
+					<h2 class="left">Triads</h2>
+					<h2 class="right">{{tot_tri_score}} %</h2>
+					<a href="/triads" class="bar_link">
+					<canvas id="bar_triads" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_triads",{{tot_tri_score}})
+					</script> 
+					</a>
+					
+					<a href="/seventh_chords" class="bar_link">
+					<h2 class="left">Seventh Chords</h2>
+					<h2 class="right">{{tot_sev_score}} %</h2>
+					<canvas id="bar_seventh_chords" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_seventh_chords",{{tot_sev_score}})
+					</script> 
+					</a>
+					
+					<a href="/extended_chords" class="bar_link">
+					<h2 class="left">Extended Chords</h2>
+					<h2 class="right">{{tot_ext_score}} %</h2>
+					<canvas id="bar_extended_chords" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_extended_chords",{{tot_ext_score}})
+					</script>
+					</a>			
+									
+					<h2 class="left">Chord Progressions</h2>
+					<h2 class="right">{{tot_pro_score}} %</h2>
+					<a href="/progressions" class="bar_link">
+					<canvas id="bar_chord_progressions" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_chord_progressions",{{tot_pro_score}})
+					</script> 
+					</a>
+					
+					<!--<h2 class="left">Chord Progressions II</h2>
+					<h2 class="right">8%</h2>
+					<a href="" class="bar_link">
+					<canvas id="bar_chord_progressions_2" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_chord_progressions_2",0,0,0,15)
+					</script> 
+					</a>
+					
+					<h2 class="left">Chord Progressions III</h2>
+					<h2 class="right">0%</h2>
+					<a href="" class="bar_link">
+					<canvas id="bar_chord_progressions_3" class="progress_bar" width="220" height="20">
+					Your browser does not support the HTML5 canvas tag.</canvas>
+
+					<script type="text/javascript">
+						func_bar("bar_chord_progressions_3",0,0,0,0)
+					</script> 
+					</a>		-->	
+				</div>
+{% endblock %}	
+

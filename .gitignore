@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+#text backup files
+*.bak
+
+#Database
+*.sqlite3

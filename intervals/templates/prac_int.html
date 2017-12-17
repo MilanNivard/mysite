@@ -1,0 +1,87 @@
+{% extends "header.html" %}	
+{% block content %}	
+				<div id="left_column">
+					{% include "includes/left_column.html" %}	
+				</div>
+				<div id="RightColumn">
+				{% load static %}
+					<a href="#openHelp" id="help"> <img src="{% static 'images/help.png' %}"></a>	
+					<div id="openHelp" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close"><h1>X</h1></a>
+							<h2>Intervals</h2>
+							<p>Pick the correct interval.</p>
+							<p>Please note that we simplified the names of the intervals.
+							Here are the full names:</p>
+							<table>
+								<tr>
+									<td>1</td>
+									<td>Perfect unison</td>
+								</tr>
+								<tr>
+									<td>b2</td>
+									<td>Minor second</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Major second</td>
+								</tr>
+								<tr>
+									<td>b3</td>
+									<td>Minor third</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Major third</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Perfect fourth</td>
+								</tr>
+								<tr>
+									<td>b5</td>
+									<td>Augmented fourth/diminished fith, also known as triton</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Perfect fifth</td>
+								</tr>
+								<tr>
+									<td>b6</td>
+									<td>Minor sixth</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Major sixth</td>
+								</tr>
+								<tr>
+									<td>b7</td>
+									<td>Minor seventh</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Major seventh</td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>Perfect octave</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<a id="playbutton" href="#">
+						<div class="{{ start_button }}">
+						</div>
+					</a>
+
+					<div id="volumcontroller"></div>
+					
+					<div id="questions">
+						{% include "int/lvl_int.html" %}
+					</div>
+									
+					<!--<div id="piano"></div>-->
+				</div>
+
+{% endblock %}	

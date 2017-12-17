@@ -1,0 +1,115 @@
+{% extends "header.html" %}	
+{% block content %}	
+				<div id="left_column">
+					{% include "includes/left_column.html" %}	
+				</div>
+				<div id="RightColumn">
+				{% load static %}
+					<a href="#openHelp" id="help"> <img src="{% static 'images/help.png' %}"></a>	
+					<div id="openHelp" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close"><h1>X</h1></a>
+							<h2>Seventh Chords</h2>
+							<p>After the triads, let's take it one step/note further!</p>
+							<table>
+								<tr>
+									<td>major</td>
+									<td>: 1, 3, 5</td>
+									<td> (a minor third on top of a major third)</td>
+								</tr>
+								<tr>
+									<td>minor</td>
+									<td>: 1, b3, 5</td>
+									<td> (a major third on top of a minor third)</td>
+								</tr>
+								<tr>
+									<td>diminished</td>
+									<td>: 1, b3, b5</td>
+									<td> (two minor thirds on top of eachother)</td>
+								</tr>
+								<tr>
+									<td>augmented</td>
+									<td>: 1, 3, b6</td>
+									<td> (two major thirds on top of eachother)</td>
+								</tr>
+								<tr>
+									<td>suspended 2</td>
+									<td>: 1, 2, 5</td>
+									<td> (a perfect fourth on top of a major second)</td>
+								</tr>
+								<tr>
+									<td>suspended 4</td>
+									<td>: 1, 4, 5</td>
+									<td> (a major second on top of a perfect fourth)</td>
+								</tr>
+							
+								<tr>
+									<td><br/></td>
+									<td></td>
+									<td></td>
+								</tr>
+							
+								<tr>
+									<td>dominant</td>
+									<td>: 1, 3, 5, b7</td>
+									<td> (major triad plus a minor 7th)</td>
+								</tr>
+								<tr>
+									<td>minor 7th</td>
+									<td>: 1, b3, 5, b7</td>
+									<td> (minor triad plus a minor 7th)</td>
+								</tr>
+								<tr>
+									<td>diminished 7th</td>
+									<td>: 1, b3, b5, 6</td>
+									<td> (diminished triad plus a sixth)</td>
+								</tr>
+								<tr>
+									<td>augmented 7th</td>
+									<td>: 1, 3, b6, b7</td>
+									<td> augmented triad plus a minor 7th)</td>
+								</tr>
+								<tr>
+									<td><br/></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>major 7th</td>
+									<td>: 1, 3, 5, 7</td>
+									<td> (major triad plus a major 7th)</td>
+								</tr>
+								<tr>
+									<td>minor/major 7th</td>
+									<td>: 1, b3, 5, 7</td>
+									<td> (minor triad plus a major 7th)</td>
+								</tr>
+								<tr>
+									<td>half-diminished 7th</td>
+									<td>: 1, b3, b5, b7</td>
+									<td> (diminished triad plus a minor 7th)</td>
+								</tr>
+								<tr>
+									<td>augmented major 7th</td>
+									<td>: 1, 3, b6, 7</td>
+									<td> (augmented triad plus a major 7th)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					
+					<a id="playbutton" href="#">
+						<div class="{{ start_button }}">
+						</div>
+					</a>
+
+					<div id="volumcontroller"></div>
+					
+					<div id="questions">
+						{% include "sev/lvl_sev.html" %}
+					</div>
+									
+					<!--<div id="piano"></div>-->
+				</div>
+
+{% endblock %}	

@@ -1,0 +1,35 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".t15",'major 7th')
+ans_but(".t16",'dominant')
+ans_but(".t17",'minor 7th')
+ans_but(".t18",'b9')
+ans_but(".t19",'maj 9')
+ans_but(".t20",'9')
+ans_but(".t21",'min 9')
+ans_but(".t22",'#9')
+ans_but(".t23",'maj #11')
+ans_but(".t24",'#11')
+ans_but(".t25",'min 11')
+ans_but(".t26",'b9b13')
+ans_but(".t27",'maj9b13')
+ans_but(".t28",'b13')
+ans_but(".t29",'min 13')
+</script> 
+						<div id="prog_barrus">							
+							{% include "includes/prog_bar.html" %}
+						</div>
+
+						<div id="table_ext">
+							{% include "ext/table_ext.html" %}
+						</div>

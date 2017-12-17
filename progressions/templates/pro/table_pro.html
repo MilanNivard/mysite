@@ -1,0 +1,148 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".p1",'I')
+ans_but(".p2",'ii')
+ans_but(".p3",'bIII')
+ans_but(".p4",'iii')
+ans_but(".p5",'IV')
+ans_but(".p6",'V')
+ans_but(".p7",'bVI')
+ans_but(".p8",'vi')
+ans_but(".p9",'bVII')
+
+ans_but(".p11",'I 1st')
+ans_but(".p12",'ii 1st')
+ans_but(".p13",'bIII 1st')
+ans_but(".p14",'iii 1st')
+ans_but(".p15",'IV 1st')
+ans_but(".p16",'V 1st')
+ans_but(".p17",'bVI 1st')
+ans_but(".p18",'vi 1st')
+ans_but(".p19",'bVII 1st')
+
+ans_but(".p21",'I 2nd')
+ans_but(".p22",'ii 2nd')
+ans_but(".p23",'bIII 2nd')
+ans_but(".p24",'iii 2nd')
+ans_but(".p25",'IV 2nd')
+ans_but(".p26",'V 2nd')
+ans_but(".p27",'bVI 2nd')
+ans_but(".p28",'vi 2nd')
+ans_but(".p29",'bVII 2nd')
+
+
+ans_but(".p31",'i')
+ans_but(".p32",'bII')
+ans_but(".p33",'III')
+ans_but(".p34",'iv')
+ans_but(".p35",'IV')
+ans_but(".p36",'v')
+ans_but(".p37",'V')
+ans_but(".p38",'VI')
+ans_but(".p39",'VII')
+
+ans_but(".p41",'i 1st')
+ans_but(".p42",'bII 1st')
+ans_but(".p43",'III 1st')
+ans_but(".p44",'iv 1st')
+ans_but(".p45",'IV 1st')
+ans_but(".p46",'v 1st')
+ans_but(".p47",'V 1st')
+ans_but(".p48",'VI 1st')
+ans_but(".p49",'VII 1st')
+
+ans_but(".p51",'i 2nd')
+ans_but(".p52",'bII 2nd')
+ans_but(".p53",'III 2nd')
+ans_but(".p54",'iv 2nd')
+ans_but(".p55",'IV 2nd')
+ans_but(".p56",'v 2nd')
+ans_but(".p57",'V 2nd')
+ans_but(".p58",'VI 2nd')
+ans_but(".p59",'VII 2nd')
+</script> 
+<table id="table_pro_ans">
+	{% include "pro/table_pro_ans.html" %}
+</table>
+<table id="table_sev_chords" class="{{ visibility_major }}">
+	<tr>
+		<td><a href="#" class="{{ p1 }}"></a></td>
+		<td><a href="#" class="{{ p2 }}"></a></td>
+		<td><a href="#" class="{{ p3 }}"></a></td>
+		<td><a href="#" class="{{ p4 }}"></a></td>
+		<td><a href="#" class="{{ p5 }}"></a></td>
+		<td><a href="#" class="{{ p6 }}"></a></td>
+		<td><a href="#" class="{{ p7 }}"></a></td>
+		<td><a href="#" class="{{ p8 }}"></a></td>
+		<td><a href="#" class="{{ p9 }}"></a></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="{{ p11 }}"></a></td>
+		<td><a href="#" class="{{ p12 }}"></a></td>
+		<td><a href="#" class="{{ p13 }}"></a></td>
+		<td><a href="#" class="{{ p14 }}"></a></td>
+		<td><a href="#" class="{{ p15 }}"></a></td>
+		<td><a href="#" class="{{ p16 }}"></a></td>
+		<td><a href="#" class="{{ p17 }}"></a></td>
+		<td><a href="#" class="{{ p18 }}"></a></td>
+		<td><a href="#" class="{{ p19 }}"></a></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="{{ p21 }}"></a></td>
+		<td><a href="#" class="{{ p22 }}"></a></td>
+		<td><a href="#" class="{{ p23 }}"></a></td>
+		<td><a href="#" class="{{ p24 }}"></a></td>
+		<td><a href="#" class="{{ p25 }}"></a></td>
+		<td><a href="#" class="{{ p26 }}"></a></td>
+		<td><a href="#" class="{{ p27 }}"></a></td>
+		<td><a href="#" class="{{ p28 }}"></a></td>
+		<td><a href="#" class="{{ p29 }}"></a></td>
+	</tr>
+	
+</table>
+<table id="table_sev_chords" class="{{ visibility_minor }}">
+	<tr>
+		<td><a href="#" class="{{ p31 }}"></a></td>
+		<td><a href="#" class="{{ p32 }}"></a></td>
+		<td><a href="#" class="{{ p33 }}"></a></td>
+		<td><a href="#" class="{{ p34 }}"></a></td>
+		<td><a href="#" class="{{ p35 }}"></a></td>
+		<td><a href="#" class="{{ p36 }}"></a></td>
+		<td><a href="#" class="{{ p37 }}"></a></td>
+		<td><a href="#" class="{{ p38 }}"></a></td>
+		<td><a href="#" class="{{ p39 }}"></a></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="{{ p41 }}"></a></td>
+		<td><a href="#" class="{{ p42 }}"></a></td>
+		<td><a href="#" class="{{ p43 }}"></a></td>
+		<td><a href="#" class="{{ p44 }}"></a></td>
+		<td><a href="#" class="{{ p45 }}"></a></td>
+		<td><a href="#" class="{{ p46 }}"></a></td>
+		<td><a href="#" class="{{ p47 }}"></a></td>
+		<td><a href="#" class="{{ p48 }}"></a></td>
+		<td><a href="#" class="{{ p49 }}"></a></td>
+	</tr>
+	<tr>
+		<td><a href="#" class="{{ p51 }}"></a></td>
+		<td><a href="#" class="{{ p52 }}"></a></td>
+		<td><a href="#" class="{{ p53 }}"></a></td>
+		<td><a href="#" class="{{ p54 }}"></a></td>
+		<td><a href="#" class="{{ p55 }}"></a></td>
+		<td><a href="#" class="{{ p56 }}"></a></td>
+		<td><a href="#" class="{{ p57 }}"></a></td>
+		<td><a href="#" class="{{ p58 }}"></a></td>
+		<td><a href="#" class="{{ p59 }}"></a></td>
+	</tr>
+</table>
+

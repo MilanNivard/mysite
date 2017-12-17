@@ -1,0 +1,34 @@
+						<script type='text/javascript'>
+						function ans_but(interval, inp){
+							$(document).ready(function(){
+								$(interval).on('click', function() {
+								$.ajax({
+								// url: '/answer/',
+								data: {answer: inp},
+								type: 'GET',})
+								});
+							});
+						}	
+
+						ans_but(".a0",'0')
+						ans_but(".a1",'1')
+						ans_but(".a2",'2')
+						ans_but(".a3",'3')
+						ans_but(".a4",'4')
+						ans_but(".a5",'5')
+						ans_but(".a6",'6')
+						ans_but(".a7",'7')
+						ans_but(".a8",'8')
+						ans_but(".a9",'9')
+						ans_but(".a10",'10')
+						ans_but(".a11",'11')
+						ans_but(".a12",'12')
+												
+						</script>
+						<div id="prog_barrus">						
+							{% include "includes/prog_bar.html" %}
+						</div>
+
+						<div id="table_int">
+							{% include "int/table_int.html" %}
+						</div>

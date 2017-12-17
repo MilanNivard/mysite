@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>auris eartraining</title>
+	{% load static %}
+	<link 	type="text/css"			rel="stylesheet" 		href="{% static 'css/style.css' %}"/>
+	<script type='text/javascript' 	src="{% static 'js/jquery-1.7.1.min.js' %}"></script>
+	<script type='text/javascript' 	src="{% static 'js/javascript.js' %}"></script>
+	<link 	rel="icon" 				type="image/x-ico" 		href="{% static 'images/favicon.ico'%}" />		
+</head>
+<body>
+	<div id="wrapper">
+		<header class="glossy">
+			<div id="headerContent">
+				<a href="/profile" id="logo"><img src="{% static 'images/LogoProgramma.png' %}"></a>
+				<div id="menu">
+					<!--<a class="left" href="/">Home</a> -->
+					{% if user.is_anonymous %}
+						<a class="right" href="../login">Login</a>
+					{% else %}
+						<a class="right" href="/profile">
+							<!--{{request.user.first_name}} {{request.user.last_name}}-->
+							{{request.user}}
+						</a>
+					{% endif %}
+				</div>
+				
+			</div>
+		</header>
+		<div id="content">
+			
+					{% block content%}					
+					{% endblock %}					
+			
+		</div>
+
+		<div id="footer"><!--Footer Area--></div>
+
+		<script type='text/javascript' src="{% static 'js/audio.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/piano.js' %}"></script>
+		<script type='text/javascript' src="{% static 'js/jquery.js' %}"></script>
+	</div>	
+</body>
+
+</html>

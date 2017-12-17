@@ -1,0 +1,76 @@
+{% extends "header.html" %}	
+{% block content %}	
+				<div id="LeftColumn">
+					{% include "includes/left_column.html" %}
+				</div>
+				<div id="RightColumn">
+				{% load static %}
+					<a href="#openHelp" id="help"> <img src="{% static 'images/help.png' %}"></a>	
+					<div id="openHelp" class="modalDialog md_extchords">
+						<div>
+							<a href="#close" title="Close" class="close"><h1>X</h1></a>
+							<h2>Intervals</h2>
+							<p>Uitleg over intervallen</p>
+							<p></p>
+						</div>
+					</div>
+					
+					<a id="playbutton" href="#"></a>
+					<div id="volumcontroller"></div>
+					
+					<div id="questions">
+						<div id="prac_expl">
+							<div id="lvllogo">
+								<div id="lvlnr">12</div>
+								<div id="totlvl">/12</div>
+							</div>
+							<h1>Practice</h1>
+							Get all your skills to beginner level
+						</div>
+						<canvas id="challenge_bar" width="612" height="30" style="background-color:#e9eceb;">
+						Your browser does not support the HTML5 canvas tag.</canvas>
+						
+						<script type="text/javascript">
+							chal_bar("challenge_bar",80,120,150,160)
+						</script> 
+						<table id="table_intervals">
+							<tr>
+								<td class="ext_interval"><a href="#" class="button_chords t15"></a></td>
+								<td class="ext_interval"><a href="#" class="button_chords t16"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t17"></a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="td_interval"><a href="#" class="button_chords t18"></a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="td_interval"><a href="#" class="button_chords t19"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t20"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t21"></a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="td_interval"><a href="#" class="button_chords t22"></a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="td_interval"><a href="#" class="button_chords t23"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t24"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t25"></a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td class="td_interval"><a href="#" class="button_chords t26"></a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="td_interval"><a href="#" class="button_chords t27"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t28"></a></td>
+								<td class="td_interval"><a href="#" class="button_chords t29"></a></td>
+							</tr>
+						</table>
+					</div>
+					<div id="piano"></div>
+				</div>
+{% endblock %}	

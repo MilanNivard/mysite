@@ -1,0 +1,174 @@
+{% extends "header.html" %}	
+{% block content %}	
+{% include "includes/left_column_home.html" %}	
+				<div id="RightColumn">
+					<h1>Profile</h1>
+					<a id="logout" href="/logout">Log out</a>
+					<div id="user_profile">
+						{{ users }} https://stackoverflow.com/questions/9206373/how-to-render-a-queryset-into-a-table-template-django
+						<table>
+							<tr> 
+								<td class="prof_bold">Username</td>
+								<td>:</td>
+								<td>{{request.user.username}}</td>
+							</tr>
+							<!--<tr> 
+								<td class="prof_bold">Password</td>
+								<td>:</td>
+								<td>{{request.user.password}}</td>
+							
+							
+							<tr> 
+								<td class="prof_bold">Name</td>
+								<td>:</td>
+								<td>{{request.user.first_name}} {{request.user.last_name}}</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">Email</td>
+								<td>:</td>
+								<td>{{request.user.email}}</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">Age</td>
+								<td>:</td>
+								<td>{{request.user.age}}</td>
+							</tr>
+							
+
+							<tr> 
+								<td class="prof_bold">Course of study</td>
+								<td>:</td>
+								<td>{{request.user.study}}</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">Instruments</td>
+								<td>:</td>
+								<td>{{request.user.instrument}}
+								gitaar
+								<br/>
+								piano<br/>
+								</td>
+							</tr>
+							</tr>-->
+							<tr> 
+								<td class="prof_bold">Date joined</td>
+								<td>:</td>
+								<td>{{request.user.date_joined}}</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">Last login</td>
+								<td>:</td>
+								<td>{{request.user.last_login}}</td>
+							</tr>
+						</table>
+					</div>
+					
+					<h1>Statistics</h1>
+					
+					<div id="user_stats">
+						<p>Work in progress</p>
+						<!--<table class="left">
+							<tr> 
+								<td class="stat_header">all time</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">average per day</td>
+								<td>:</td>
+								<td>6</td>
+								<td>min</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">average per session</td>
+								<td>:</td>
+								<td>15</td>
+								<td>min</td>
+							</tr>
+							<tr><td>.</td> </tr>
+							<tr> 
+								<td class="stat_header">last 30 days</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">average per day</td>
+								<td>:</td>
+								<td>6</td>
+								<td>min</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">average per session</td>
+								<td>:</td>
+								<td>15</td>
+								<td>min</td>
+							</tr>
+						</table>
+						<table class="right">
+							<tr> 
+								<td class="stat_header">streak</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">current streak</td>
+								<td>:</td>
+								<td>4</td>
+								<td>days</td>
+							</tr>
+							<tr> 
+								<td class="prof_bold">longest streak</td>
+								<td>:</td>
+								<td>23</td>
+								<td>days</td>
+							</tr>
+						</table>
+						
+						-->
+					</div>
+					<!--
+					<div id="user_graph">
+						<img src="images/graph.jpg">
+					</div>-->
+					<h1>Targets</h1>
+					<div id="user_targets">
+						<p>Work in progress</p>
+						<!--<table>
+							<tr> 
+								<td id="target_skill">skill</td>
+								<td id="target_compl">complete</td>
+								<td id="target_deadline">deadline</td>
+								<td id="target_progress">progress</td>
+							</tr>
+							<tr> 
+								<td>Pitch</td>
+								<td>Phase 5</td>
+								<td>14 sep</td>
+								<td>100%</td>
+							</tr>
+							<tr> 
+								<td>Intervals</td>
+								<td>Phase 4</td>
+								<td>14 sep</td>
+								<td>82%</td>
+							</tr>
+							<tr> 
+								<td>Melodic Dictation</td>
+								<td>Phase 3</td>
+								<td>14 sep</td>
+								<td>74%</td>
+							</tr>
+							<tr> 
+								<td>Triads</td>
+								<td>Phase 1</td>
+								<td>14 sep</td>
+								<td>97%</td>
+							</tr>
+						</table>-->
+					</div>
+				</div>
+{% endblock %}	
+

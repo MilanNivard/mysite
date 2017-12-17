@@ -1,0 +1,57 @@
+<script>
+function ans_but(interval, inp){
+	$(document).ready(function(){
+		$(interval).on('click', function() {
+		$.ajax({
+		// url: '/answer/',
+		data: {answer: inp},
+		type: 'GET',})
+		});
+	});
+}	
+
+ans_but(".t1",'major')
+ans_but(".t2",'minor')
+ans_but(".t3",'dim')
+ans_but(".t4",'aug')
+ans_but(".t5",'sus2')
+
+ans_but(".t6",'dominant')
+ans_but(".t7",'minor 7th')
+ans_but(".t8",'dim 7th')
+ans_but(".t9",'aug 7th')
+ans_but(".t10",'sus4')
+
+ans_but(".t11",'major 7th')
+ans_but(".t12",'min/maj 7th')
+ans_but(".t13",'half-dim 7th')
+ans_but(".t14",'aug major 7th')
+</script> 
+
+<table id="table_intervals_t">
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ t1 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t2 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t3 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t4 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t5 }}"></a></td>
+	</tr>
+</table>
+<table id="table_sev_b">
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ t6 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t7 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t8 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t9 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t10 }}"></a></td>
+	</tr>							
+</table>
+<table id="table_sev_c">
+	<tr>
+		<td class="td_interval"><a href="#" class="{{ t11 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t12 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t13 }}"></a></td>
+		<td class="td_interval"><a href="#" class="{{ t14 }}"></a></td>
+		<td class="td_interval"></td>
+	</tr>							
+</table>

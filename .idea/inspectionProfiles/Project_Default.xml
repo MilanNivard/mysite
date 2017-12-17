@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="intervals.models.Lvl.objects" />
+          <option value="intervals.models.LvlInt.objects" />
+          <option value="triads.models.LvlTri.objects" />
+          <option value="extended_chords.models.LvlExt.objects" />
+          <option value="progressions.models.LvlPro.objects" />
+          <option value="seventh_chords.models.LvlSev.objects" />
+          <option value="melodic_dictation.models.LvlMel.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

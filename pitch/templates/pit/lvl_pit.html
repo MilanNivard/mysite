@@ -1,0 +1,30 @@
+						<script type='text/javascript'>
+						function ans_but(interval, inp){
+							$(document).ready(function(){
+								$(interval).on('click', function() {
+								$.ajax({
+								// url: '/answer/',
+								data: {answer: inp},
+								type: 'GET',})
+								});
+							});
+						}	
+
+						ans_but(".higher",'higher')
+						ans_but(".lower",'lower')
+																		
+						</script>
+						<div id="prog_barrus">						
+							{% include "includes/prog_bar.html" %}
+						</div>
+
+						<div id="table_pit">
+							<table id="table_intervals_t">
+								<tr>
+									<td class="td_interval"><a href="#" class="{{ p_1 }}"></a></td>
+								</tr>
+								<tr>
+									<td class="td_interval"><a href="#" class="{{ p_2 }}"></a></td>
+								</tr>
+							</table>
+						</div>
